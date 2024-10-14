@@ -34,13 +34,13 @@ const CoreServices = () => {
           >
             <div className="flex items-center justify-between mb-4">
               <div>{service.icon}</div>
-              <div className="text-gray-100 text-5xl font-bold opacity-10">
+              <div className="text-gray-900 text-5xl font-bold opacity-40">
                 {`0${service.id}`}
               </div>
             </div>
-            <h3 className="text-xl font-bold text-orange-500 mb-4">{service.title}</h3>
-            <p className="text-gray-900">{service.description}</p>
-            <div className="mt-6 flex justify-end">
+            <h3 className="text-2xl font-bold text-orange-500 mb-4">{service.title}</h3>
+            <p className="text-gray-900 text-lg mb-8">{service.description}</p>
+            {/* <div className="mt-6 flex justify-end">
               <span className="text-white bg-gray-900 p-3 rounded-full transition-colors hover:bg-orange-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ const CoreServices = () => {
                   />
                 </svg>
               </span>
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

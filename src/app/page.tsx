@@ -7,7 +7,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 export default function Home() {
   return (
     <div>
-      <Navbar/>
+      
       <HeroSection/>
       <CoreServices/> 
       <WhyChooseUs/>

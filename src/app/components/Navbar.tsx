@@ -1,23 +1,20 @@
 'use client'
 import React, { useState } from 'react';
-import { FaBars, FaTimes, FaChevronDown } from 'react-icons/fa'; // Icons for mobile menu
+import Link from 'next/link';
+import { FaBars, FaTimes } from 'react-icons/fa'; // Icons for mobile menu
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('Home');
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
-  const [isServicesOpen, setIsServicesOpen] = useState(false); // For toggling the Services submenu
+  const [activeLink, setActiveLink] = useState('');
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
-  const handleSetActiveLink = (page: React.SetStateAction<string>) => {
+  const handleSetActiveLink = (page: string) => {
     setActiveLink(page);
     setIsMenuOpen(false); // Close the menu when a link is clicked
   };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const toggleServicesDropdown = () => {
-    setIsServicesOpen(!isServicesOpen);
   };
 
   return (
@@ -27,50 +24,46 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <div className={`hidden lg:flex flex-grow justify-center space-x-8 text-lg`}>
-        <a
-          href="#"
+        <Link
+          href="/"
           className={`relative block py-2 text-white text-lg hover:text-orange-500 transition-colors duration-300 ${
             activeLink === 'Home' ? 'text-orange-500 after:content-[""] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:rounded' : ''
           }`}
           onClick={() => handleSetActiveLink('Home')}
         >
           Home
-        </a>
+        </Link>
 
-        <a
-          href="#"
+        <Link
+          href="/recruitment"
+          className={`relative block py-2 text-white text-lg hover:text-orange-500 transition-colors duration-300 ${
+            activeLink === 'Recruitment' ? 'text-orange-500 after:content-[""] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:rounded' : ''
+          }`}
+          onClick={() => handleSetActiveLink('Recruitment')}
+        >
+          Recruitment
+        </Link>
+
+        <Link
+          href="/about"
           className={`relative block py-2 text-white text-lg hover:text-orange-500 transition-colors duration-300 ${
             activeLink === 'About' ? 'text-orange-500 after:content-[""] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:rounded' : ''
           }`}
           onClick={() => handleSetActiveLink('About')}
         >
           About Us
-        </a>
+        </Link>
 
-        <a
-          href="#"
-          className={`relative block py-2 text-white text-lg hover:text-orange-500 transition-colors duration-300 ${
-            activeLink === 'Team' ? 'text-orange-500 after:content-[""] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:rounded' : ''
-          }`}
-          onClick={() => handleSetActiveLink('Team')}
-        >
-          Our Team
-        </a>
-        <a
-          href="#"
+        <Link
+          href="/contact"
           className={`relative block py-2 text-white text-lg hover:text-orange-500 transition-colors duration-300 ${
             activeLink === 'Contact' ? 'text-orange-500 after:content-[""] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:rounded' : ''
           }`}
           onClick={() => handleSetActiveLink('Contact')}
         >
-          Contact Us
-        </a>
+          Contact
+        </Link>
       </div>
-
-      {/* Inquiry Button - Only visible on large screens */}
-      <button className="hidden lg:block ml-auto px-4 py-2 text-white bg-orange-500 hover:bg-orange-600 transform transition-transform duration-300 hover:scale-105">
-        Inquiry
-      </button>
 
       {/* Mobile Menu Icon */}
       <div className="lg:hidden z-30">
@@ -85,49 +78,45 @@ const Navbar = () => {
           isMenuOpen ? 'block' : 'hidden'
         }`}
       >
-        <a
-          href="#"
+        <Link
+          href="/"
           className={`relative block py-2 text-white text-lg hover:text-orange-500 transition-colors duration-300 ${
             activeLink === 'Home' ? 'text-orange-500 after:content-[""] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:rounded' : ''
           }`}
           onClick={() => handleSetActiveLink('Home')}
         >
           Home
-        </a>
+        </Link>
 
-        <a
-          href="#"
+        <Link
+          href="/recruitment"
+          className={`relative block py-2 text-white text-lg hover:text-orange-500 transition-colors duration-300 ${
+            activeLink === 'Recruitment' ? 'text-orange-500 after:content-[""] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:rounded' : ''
+          }`}
+          onClick={() => handleSetActiveLink('Recruitment')}
+        >
+          Recruitment
+        </Link>
+
+        <Link
+          href="/about"
           className={`relative block py-2 text-white text-lg hover:text-orange-500 transition-colors duration-300 ${
             activeLink === 'About' ? 'text-orange-500 after:content-[""] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:rounded' : ''
           }`}
           onClick={() => handleSetActiveLink('About')}
         >
           About Us
-        </a>
+        </Link>
 
-        <a
-          href="#"
-          className={`relative block py-2 text-white text-lg hover:text-orange-500 transition-colors duration-300 ${
-            activeLink === 'Team' ? 'text-orange-500 after:content-[""] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:rounded' : ''
-          }`}
-          onClick={() => handleSetActiveLink('Team')}
-        >
-          Our Team
-        </a>
-        <a
-          href="#"
+        <Link
+          href="/contact"
           className={`relative block py-2 text-white text-lg hover:text-orange-500 transition-colors duration-300 ${
             activeLink === 'Contact' ? 'text-orange-500 after:content-[""] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:rounded' : ''
           }`}
           onClick={() => handleSetActiveLink('Contact')}
         >
-          Contact Us
-        </a>
-
-        {/* Inquiry Button - Already part of the mobile nav */}
-        <button className="mt-4 px-4 py-2 text-white bg-orange-500 hover:bg-orange-600 transform transition-transform duration-300 hover:scale-105">
-          Inquiry
-        </button>
+          Contact
+        </Link>
       </div>
     </nav>
   );

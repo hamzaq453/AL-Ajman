@@ -32,16 +32,16 @@ const HeroSection = () => {
             <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
                 {/* Left Side: Text */}
                 <div className="text-center md:text-left md:w-1/2">
-                    <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-                        WELCOME TO <br /> 
-                        <span className="block mt-2 text-5xl sm:text-6xl text-orange-500">AL AJBAN</span>
+                    <h1 className="text-4xl sm:text-5xl font-bold text-orange-500 mb-6">
+                        AL-AJBAN <br /> 
+                        <span className="block mt-2 text-5xl text-gray-900 sm:text-6xl ">Your Trusted Recritment Partner</span>
                     </h1>
                     {/* Reserve space for the text to prevent layout shift */}
                     <div className="min-h-[110px]">
                         <p className="text-base sm:text-lg text-gray-900 mb-6">{displayedText}</p>
                     </div>
-                    <Link href="/contact" className="bg-orange-500 text-white py-2 sm:py-3 px-4 sm:px-6 hover:bg-orange-600 text-sm sm:text-base">
-                        Get Started
+                    <Link href="/recruitment" className="bg-orange-500  text-gray-900 font-bold py-2 sm:py-3 px-4 sm:px-6 hover:bg-orange-400  sm:text-base">
+                    Explore Opportunities!
                     </Link>
                 </div>
 
