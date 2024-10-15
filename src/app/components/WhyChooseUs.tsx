@@ -1,39 +1,44 @@
 'use client';
 import React from 'react';
 import { FaCheckCircle, FaClock, FaHandsHelping, FaUserShield } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 const WhyChooseUs = () => {
+  const { t } = useTranslation(); // Initialize translation
+
   const reasons = [
     {
       id: 1,
       icon: <FaCheckCircle size={40} className="text-white" />,
-      title: 'Proven Expertise',
-      description: 'Years of experience in delivering quality services across multiple industries.',
+      title: t('whyChooseUs.reasons.expertise.title'), // Translated title
+      description: t('whyChooseUs.reasons.expertise.description'), // Translated description
     },
     {
       id: 2,
       icon: <FaClock size={40} className="text-white" />,
-      title: 'Timely Delivery',
-      description: 'We ensure timely delivery of projects, helping you stay ahead of your deadlines.',
+      title: t('whyChooseUs.reasons.timelyDelivery.title'), // Translated title
+      description: t('whyChooseUs.reasons.timelyDelivery.description'), // Translated description
     },
     {
       id: 3,
       icon: <FaHandsHelping size={40} className="text-white" />,
-      title: 'Customer-Centric Approach',
-      description: 'Our solutions are tailored to meet your specific needs, putting your success first.',
+      title: t('whyChooseUs.reasons.customerApproach.title'), // Translated title
+      description: t('whyChooseUs.reasons.customerApproach.description'), // Translated description
     },
     {
       id: 4,
       icon: <FaUserShield size={40} className="text-white" />,
-      title: 'Reliability & Trust',
-      description: 'We build lasting relationships through trust, reliability, and transparency.',
+      title: t('whyChooseUs.reasons.reliabilityTrust.title'), // Translated title
+      description: t('whyChooseUs.reasons.reliabilityTrust.description'), // Translated description
     },
   ];
 
   return (
     <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12">Why Choose Us</h2>
+        <h2 className="text-4xl font-bold text-gray-900 mb-12">
+          {t('whyChooseUs.title')} {/* Translated section title */}
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {reasons.map((reason) => (
             <div
@@ -43,8 +48,12 @@ const WhyChooseUs = () => {
               <div className="flex items-center justify-center mb-6">
                 {reason.icon}
               </div>
-              <h3 className="text-xl font-bold text-orange-500 mb-4">{reason.title}</h3>
-              <p className="text-gray-100">{reason.description}</p>
+              <h3 className="text-xl font-bold text-orange-500 mb-4">
+                {reason.title} {/* Translated reason title */}
+              </h3>
+              <p className="text-gray-100">
+                {reason.description} {/* Translated reason description */}
+              </p>
             </div>
           ))}
         </div>

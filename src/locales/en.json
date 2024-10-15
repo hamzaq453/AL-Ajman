@@ -1,0 +1,130 @@
+{
+  "home": "Home",
+  "recruitment": "Recruitment",
+  "about": "About Us",
+  "contact": "Contact",
+  "switchLanguage": "Switch to Arabic",
+  "hero": {
+    "title": "Your Trusted Recruitment Partner",
+    "description": "We provide top-notch services to help you succeed. Partner with us for your manpower, recruitment, and business needs.",
+    "button": "Explore Opportunities!"
+  },
+  "services": {
+    "manpower": {
+      "title": "Manpower",
+      "description": "Project, Design, Material and Commissioning."
+    },
+    "industry": {
+      "title": "Industry We Serve",
+      "description": "Construction, Hospital, Oil, IT and Other Industries."
+    },
+    "countries": {
+      "title": "Countries",
+      "description": "Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain."
+    }
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "reasons": {
+      "expertise": {
+        "title": "Proven Expertise",
+        "description": "Years of experience in delivering quality services across multiple industries."
+      },
+      "timelyDelivery": {
+        "title": "Timely Delivery",
+        "description": "We ensure timely delivery of projects, helping you stay ahead of your deadlines."
+      },
+      "customerApproach": {
+        "title": "Customer-Centric Approach",
+        "description": "Our solutions are tailored to meet your specific needs, putting your success first."
+      },
+      "reliabilityTrust": {
+        "title": "Reliability & Trust",
+        "description": "We build lasting relationships through trust, reliability, and transparency."
+      }
+    }
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "aboutUsDescription": "Al Ajban is dedicated to providing top-tier manpower, recruitment, and business solutions across multiple industries.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "email": "Email: info@alajban.com",
+    "phone": "Phone: +971 123 456 789",
+    "address": "Address: Dubai, UAE",
+    "followUs": "Follow Us",
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact Us",
+    "copyright": "All rights reserved."
+  },
+  "recruitmentHub": {
+    "title": "Recruitment Hub",
+    "jobSeekersTab": "Job Seekers",
+    "employersTab": "Employers",
+    "jobListingsTitle": "Job Listings",
+    "postJobTitle": "Post a Job",
+    "postJobDescription": "Contact us to post your job listings and find the perfect candidates.",
+    "contactButton": "Contact Us",
+    "job": {
+      "category": "Category",
+      "salary": "Salary",
+      "location": "Location"
+    }
+  },
+  "categories": {
+    "it_software": "IT & Software",
+    "construction": "Construction",
+    "healthcare": "Healthcare",
+    "education": "Education",
+    "finance": "Finance",
+    "engineering": "Engineering",
+    "marketing": "Marketing",
+    "sales": "Sales",
+    "human_resources": "Human Resources",
+    "design": "Design"
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "description": "At Al Ajban, we pride ourselves on providing top-tier services across multiple industries. Our team specializes in delivering high-quality manpower solutions, recruitment services, and business support for companies across the Middle East. With years of experience, we are committed to helping our clients achieve success.",
+    "coreValues": {
+      "integrity": {
+        "title": "Integrity",
+        "description": "We uphold the highest standards of integrity in all our actions. Building trust through transparency and reliability."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for excellence in every aspect of our business. Constantly improving and innovating for the best results."
+      },
+      "customerFocus": {
+        "title": "Customer Focus",
+        "description": "Our customers are at the heart of everything we do. We work closely with you to deliver tailored solutions that fit your needs."
+      }
+    },
+    "testimonialsTitle": "What Our Clients Say",
+    "trustedCompaniesTitle": "Trusted by Leading Companies",
+    "partnerWithUsTitle": "Partner with Us Today",
+    "partnerWithUsDescription": "Let us help you achieve success in your industry. Get in touch with our team today to learn more about how we can assist you.",
+    "contactButton": "Contact Us"
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "form": {
+      "getInTouch": "Get in Touch",
+      "nameLabel": "Your Name",
+      "emailLabel": "Your Email",
+      "messageLabel": "Your Message",
+      "sendButton": "Send Message",
+      "sendingButton": "Sending...",
+      "successMessage": "Your message has been sent successfully!",
+      "errorMessage": "Failed to send the message. Please try again later."
+    },
+    "rightSection": {
+      "letsWorkTogether": "Let’s Work Together",
+      "description1": "Whether you have a question or just want to talk about how we can collaborate, we're here to listen.",
+      "description2": "Our team is ready to provide you with the best solutions tailored to your needs. Get in touch with us today!",
+      "whatsappButton": "WhatsApp Us",
+      "emailButton": "Email Us"
+    }
+  }
+}

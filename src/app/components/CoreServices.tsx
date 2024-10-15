@@ -1,26 +1,29 @@
 'use client';
 import React from 'react';
-import { FaUserTie, FaIndustry, FaGlobe } from 'react-icons/fa'; 
+import { FaUserTie, FaIndustry, FaGlobe } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 const CoreServices = () => {
+  const { t } = useTranslation(); // Initialize translation
+
   const services = [
     {
       id: 1,
       icon: <FaUserTie size={40} className="text-orange-500" />,
-      title: 'Manpower',
-      description: 'Project, Design, Material and Commissioning.',
+      title: t('services.manpower.title'), // Translated title
+      description: t('services.manpower.description'), // Translated description
     },
     {
       id: 2,
       icon: <FaIndustry size={40} className="text-orange-500" />,
-      title: 'Industry We Serve',
-      description: 'Construction, Hospital, Oil, IT and Other Industries.',
+      title: t('services.industry.title'), // Translated title
+      description: t('services.industry.description'), // Translated description
     },
     {
       id: 3,
       icon: <FaGlobe size={40} className="text-orange-500" />,
-      title: 'Countries',
-      description: 'Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain.',
+      title: t('services.countries.title'), // Translated title
+      description: t('services.countries.description'), // Translated description
     },
   ];
 
@@ -38,26 +41,12 @@ const CoreServices = () => {
                 {`0${service.id}`}
               </div>
             </div>
-            <h3 className="text-2xl font-bold text-orange-500 mb-4">{service.title}</h3>
-            <p className="text-gray-900 text-lg mb-8">{service.description}</p>
-            {/* <div className="mt-6 flex justify-end">
-              <span className="text-white bg-gray-900 p-3 rounded-full transition-colors hover:bg-orange-500">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </span>
-            </div> */}
+            <h3 className="text-2xl font-bold text-orange-500 mb-4">
+              {service.title}
+            </h3>
+            <p className="text-gray-900 text-lg mb-8">
+              {service.description}
+            </p>
           </div>
         ))}
       </div>

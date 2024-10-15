@@ -1,14 +1,16 @@
-'use client'
+'use client';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroImg from '../../../public/HeroImg1.png';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const HeroSection = () => {
+    const { t } = useTranslation(); // Initialize translation
     const [displayedText, setDisplayedText] = useState('');
     const [imageVisible, setImageVisible] = useState(false); // New state for image animation
-    const fullText = "We provide top-notch services to help you succeed. Partner with us for your manpower, recruitment, and business needs.";
-    
+    const fullText = t('hero.description'); // Get translated description text
+
     useEffect(() => {
         let currentIndex = 0;
         const typingInterval = setInterval(() => {
@@ -25,7 +27,7 @@ const HeroSection = () => {
         }, 50); // Image animation delay (100ms after page load)
 
         return () => clearInterval(typingInterval);
-    }, []);
+    }, [fullText]); // Run the effect when fullText changes (to support language switching)
 
     return (
         <section className="bg-white py-16 sm:py-24 lg:py-20">
@@ -34,14 +36,16 @@ const HeroSection = () => {
                 <div className="text-center md:text-left md:w-1/2">
                     <h1 className="text-4xl sm:text-5xl font-bold text-orange-500 mb-6">
                         AL-AJBAN <br /> 
-                        <span className="block mt-2 text-5xl text-gray-900 sm:text-6xl ">Your Trusted Recritment Partner</span>
+                        <span className="block mt-2 text-5xl text-gray-900 sm:text-6xl">
+                            {t('hero.title')} {/* Translated hero title */}
+                        </span>
                     </h1>
                     {/* Reserve space for the text to prevent layout shift */}
                     <div className="min-h-[110px]">
                         <p className="text-base sm:text-lg text-gray-900 mb-6">{displayedText}</p>
                     </div>
-                    <Link href="/recruitment" className="bg-orange-500  text-gray-900 font-bold py-2 sm:py-3 px-4 sm:px-6 hover:bg-orange-400  sm:text-base">
-                    Explore Opportunities!
+                    <Link href="/recruitment" className="bg-orange-500 text-gray-900 font-bold py-2 sm:py-3 px-4 sm:px-6 hover:bg-orange-400 sm:text-base">
+                        {t('hero.button')} {/* Translated button text */}
                     </Link>
                 </div>
 
