@@ -1,5 +1,4 @@
 'use client';
-
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -21,7 +20,7 @@ interface JobListing {
 }
 
 const RecruitmentHub: React.FC = () => {
-  const { t, i18n } = useTranslation(); // Initialize i18n for translation
+  const { t } = useTranslation(); // Initialize i18n for translation
   const [activeTab, setActiveTab] = useState<'jobSeekers' | 'employers'>('jobSeekers');
   const [jobListings, setJobListings] = useState<JobListing[]>([]);
 

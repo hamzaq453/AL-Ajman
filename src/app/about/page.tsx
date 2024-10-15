@@ -99,7 +99,7 @@ const AboutPage = () => {
                   className="w-20 h-20 rounded-full mb-4"
                 />
                 <FaQuoteLeft className="text-orange-500 mb-4" size={24} />
-                <p className="text-gray-700 mb-4">"{testimonial.quote}"</p>
+                <p className="text-gray-700 mb-4">&quot;{testimonial.quote}&quot;</p>
                 <h3 className="text-lg font-bold text-gray-900">{testimonial.name}</h3>
                 <p className="text-sm text-gray-500">{testimonial.role}</p>
               </div>
