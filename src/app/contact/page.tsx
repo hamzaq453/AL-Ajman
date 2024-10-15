@@ -41,7 +41,7 @@ const ContactPage = () => {
         const data = await response.json();
         throw new Error(data.error || 'Failed to send email');
       }
-    } catch (error) {
+    } catch {
       setErrorMessage(t('contactPage.form.errorMessage'));
     } finally {
       setIsSubmitting(false);

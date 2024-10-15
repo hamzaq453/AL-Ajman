@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
+import Image from 'next/image';
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -96,7 +97,7 @@ const Navbar = () => {
           onClick={toggleLanguage}
           className="flex items-center bg-gray-200 rounded-full px-2 py-1 space-x-2 text-gray-900"
         >
-          <img
+          <Image
             src={currentLanguage === 'en' ? '/UKFlag.png' : '/ARFlag.png'}
             alt={currentLanguage === 'en' ? 'UK Flag' : 'Arabic Flag'}
             className="w-5 h-5"
@@ -161,7 +162,7 @@ const Navbar = () => {
           onClick={toggleLanguage}
           className="flex items-center bg-gray-200 rounded-full px-2 py-1 space-x-2 text-gray-900"
         >
-          <img
+          <Image
             src={currentLanguage === 'en' ? '/UKFlag.png' : '/ARFlag.png'}
             alt={currentLanguage === 'en' ? 'UK Flag' : 'Arabic Flag'}
             className="w-5 h-5"
