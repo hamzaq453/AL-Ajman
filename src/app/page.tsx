@@ -1,6 +1,8 @@
 import HeroSection from "./components/Hero";
 import CoreServices from "./components/CoreServices";
 import WhyChooseUs from "./components/WhyChooseUs";
+import WeAreSection from "./components/WeAre";
+import CallToAction from "./components/CTA";
 
 export default function Home() {
   return (
@@ -8,7 +10,11 @@ export default function Home() {
       
       <HeroSection/>
       <CoreServices/> 
+      <WeAreSection/>
       <WhyChooseUs/>
+      <CallToAction/>
+      <div className="py-10 bg-white"></div>
+
     </div>
   );
 }

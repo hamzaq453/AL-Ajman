@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import HeroImg from '../../../public/HeroImg1.png';
-import { useTranslation } from 'react-i18next'; // Import useTranslation
+import HeroImg from '../../../public/Hero1.png';
+import { useTranslation } from 'react-i18next'; 
 
 const HeroSection = () => {
     const { t } = useTranslation(); // Initialize translation
@@ -56,8 +56,6 @@ const HeroSection = () => {
                         <Image 
                             src={HeroImg} 
                             alt="Hero Graphic"
-                            width={350} 
-                            height={350} 
                             className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 mx-auto rounded-lg transition-transform duration-500 ease-in-out group-hover:scale-110"
                         />
                         {/* Optional shadow/overlay effect */}

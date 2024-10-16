@@ -43,7 +43,7 @@ const RecruitmentHub: React.FC = () => {
   }, []);
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-10">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">
           {t('recruitmentHub.title')}
@@ -122,9 +122,10 @@ const RecruitmentHub: React.FC = () => {
               {t('recruitmentHub.postJobTitle')}
             </h3>
             <p className="text-lg text-gray-600">{t('recruitmentHub.postJobDescription')}</p>
-            <button className="mt-4 px-6 py-3 bg-orange-500 text-white hover:bg-orange-600 transition-transform duration-300 hover:scale-105">
-              {t('recruitmentHub.contactButton')}
-              <Link href="/contact"></Link>
+            <button className="mt-10 mb-28 px-6 py-3 bg-orange-500 text-white hover:bg-orange-600 transition-transform duration-300 hover:scale-105">
+            <Link href="/contact">
+              {t('recruitmentHub.getInTouch')}
+              </Link>
             </button>
           </div>
         )}

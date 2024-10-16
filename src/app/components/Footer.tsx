@@ -7,7 +7,7 @@ const Footer = () => {
   const { t } = useTranslation(); // Initialize translation
 
   return (
-    <footer className="bg-gray-950 text-gray-100">
+    <footer className="bg-gray-950 text-gray-100 ">
       {/* Main Footer Section */}
       <div className="max-w-7xl mx-auto py-12 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* About Us */}

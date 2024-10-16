@@ -2,10 +2,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaQuoteLeft } from 'react-icons/fa';
-import { useTranslation } from 'react-i18next'; // Import useTranslation hook
+import { useTranslation } from 'react-i18next'; 
 
 const AboutPage = () => {
-  const { t } = useTranslation(); // Initialize translation
+  const { t } = useTranslation(); 
 
   const testimonials = [
     {

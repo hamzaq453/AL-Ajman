@@ -65,7 +65,8 @@
     "jobListingsTitle": "Job Listings",
     "postJobTitle": "Post a Job",
     "postJobDescription": "Contact us to post your job listings and find the perfect candidates.",
-    "contactButton": "Contact Us",
+    "contactButton": "Apply Now",
+    "getInTouch": "Get in Touch",
     "job": {
       "category": "Category",
       "salary": "Salary",

@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
 import Image from 'next/image';
+import Logo from '../../../public/Logo Al_AJBAN1.png'
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -29,8 +30,10 @@ const Navbar = () => {
   const currentLanguage = i18n.language;
 
   return (
-    <nav className="flex items-center justify-between p-4 bg-gray-900 shadow-lg">
-      <div className="text-2xl font-bold text-orange-400">AL AJBAN</div>
+    <nav className="flex items-center justify-between p-0 bg-gray-900 shadow-lg">
+      <div className="text-2xl font-bold text-orange-400 md:ml-5">
+        <Image src={Logo} alt={'AL AJMAN'} width={90} height={10} objectFit='fill'/>
+      </div>
 
       {/* Desktop Links */}
       <div className="hidden lg:flex flex-grow justify-center space-x-8 text-lg">
@@ -76,15 +79,18 @@ const Navbar = () => {
       </div>
 
       {/* Language Switcher for Desktop - Aligned Right */}
-      <div className="hidden lg:flex items-center justify-end flex-grow">
+      <div className="hidden lg:flex items-center justify-end flex-grow mr-5">
         <button
           onClick={toggleLanguage}
           className="flex items-center bg-gray-200 rounded-full px-2 py-1 space-x-2 text-gray-900"
         >
-          <img
+          <Image
             src={currentLanguage === 'en' ? '/UKFlag.png' : '/ARFlag.png'}
             alt={currentLanguage === 'en' ? 'UK Flag' : 'Arabic Flag'}
             className="w-5 h-5"
+            width={100}
+            height={100}
+
           />
           <span>{currentLanguage === 'en' ? 'EN' : 'AR'}</span>
         </button>
@@ -101,7 +107,9 @@ const Navbar = () => {
             src={currentLanguage === 'en' ? '/UKFlag.png' : '/ARFlag.png'}
             alt={currentLanguage === 'en' ? 'UK Flag' : 'Arabic Flag'}
             className="w-5 h-5"
-          />
+            width={100}
+            height={100}
+            />
           <span>{currentLanguage === 'en' ? 'EN' : 'AR'}</span>
         </button>
 
@@ -161,11 +169,13 @@ const Navbar = () => {
         <button
           onClick={toggleLanguage}
           className="flex items-center bg-gray-200 rounded-full px-2 py-1 space-x-2 text-gray-900"
-        >
+        > 
           <Image
             src={currentLanguage === 'en' ? '/UKFlag.png' : '/ARFlag.png'}
             alt={currentLanguage === 'en' ? 'UK Flag' : 'Arabic Flag'}
             className="w-5 h-5"
+            width={100}
+            height={100}
           />
           <span>{currentLanguage === 'en' ? 'EN' : 'AR'}</span>
         </button>
