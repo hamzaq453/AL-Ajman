@@ -8,11 +8,7 @@ export default function Home() {
   return (
     <div>
       
-      <HeroSection/>
-      <CoreServices/> 
-      <WeAreSection/>
-      <WhyChooseUs/>
-      <CallToAction/>
+     
       <div className="py-10 bg-white"></div>
 
     </div>
